@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 
 class SortHouse extends Component {
-    shouldComponentUpdate = nextProps => {
+    shouldComponentUpdate(nextProps) {
         return nextProps.selectedSortType !== this.props.selectedSortType ||
             nextProps.sortChange !== this.props.sortChange ||
             nextProps.selectedDefault !== this.props.selectedDefault ||
